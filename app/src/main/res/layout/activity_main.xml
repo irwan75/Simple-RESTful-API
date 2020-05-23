@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:hint="Masukkan Title"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama"
+                android:layout_below="@+id/title"
+                android:hint="Masukkan Nama"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/note"
+                android:layout_below="@+id/nama"
+                android:hint="Masukkan Note Anda"
+                android:minLines="6"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/note"
+                android:layout_marginTop="16dp"
+                android:text="@string/kirim"
+                android:id="@+id/btnKirim"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/shape_button"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnKirim"
+                android:text="@string/lihat_data"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lihatData"
+                android:background="@drawable/shape_button"
+                android:layout_marginRight="50dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorPrimary"
+                />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
